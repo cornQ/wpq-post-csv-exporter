@@ -5,7 +5,7 @@
 **Requires at least:** 4.0  
 **Tested up to:** 6.7  
 **Stable tag:** 1.3  
-**License:** GPLv3 
+**License:** GPLv3 or later
 **License URI:** [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)  
 **Short Description:** Exports published posts (or any public post type) in CSV format including the created date, author, title, URL, and thumbnail URL.
 
@@ -29,6 +29,17 @@ On the export page, select a public post type from the dropdown. The generated C
 - **Title**
 - **URL** (permalink)
 - **Thumbnail URL** (if available)
+
+## Screenshots 
+
+1. **WP Admin Dashboard:**  
+   This screenshot shows the plugin settings page in the WordPress admin dashboard.  
+   ![WP Admin Dashboard](assets/wpadmin-dashboard.png)
+
+2. **Exported CSV:**  
+   This screenshot displays an example of an exported CSV file opened in a spreadsheet application.  
+   ![Exported CSV](assets/exported-csv.png)
+
 
 ## Changelog
 
