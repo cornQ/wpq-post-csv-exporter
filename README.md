@@ -1,8 +1,8 @@
 # WPQ Post CSV Exporter
 
-**Contributors:** sakib, cornQ  
+**Contributors:** sakibstime, cornq
 **Tags:** csv, export, posts, custom post types  
-**Requires at least:** 4.0  
+**Requires at least:** 4.7 
 **Tested up to:** 6.7  
 **Stable tag:** 1.3  
 **License:** GPLv3 or later
