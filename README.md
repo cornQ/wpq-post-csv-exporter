@@ -7,7 +7,8 @@
 **Stable tag:** 1.3  
 **License:** GPLv3 or later
 **License URI:** [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)  
-**Short Description:** Exports published posts (or any public post type) in CSV format including the created date, author, title, URL, and thumbnail URL.
+
+Exports published posts (or any public post type) in CSV format including the created date, author, title, URL, and thumbnail URL.
 
 ## Description
 
