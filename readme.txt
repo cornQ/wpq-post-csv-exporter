@@ -1,6 +1,6 @@
 === WPQ Post CSV Exporter ===
-Contributors: sakib, cornQ
-Donate link: https://example.com/
+Contributors: sakibstime, cornq
+Donate link: https://buymeacoffee.com/sakibstime
 Tags: csv, export, posts, custom post types
 Requires at least: 4.7
 Tested up to: 6.7
@@ -34,6 +34,9 @@ Yes, WPQ Post CSV Exporter supports all public post types, including custom post
 
 = 1.3 =
 * Initial Release
+
+== Upgrade Notice ==
+N/A
 
 == Manual Installation ==
 
