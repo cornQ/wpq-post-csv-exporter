@@ -34,11 +34,11 @@ On the export page, select a public post type from the dropdown. The generated C
 
 1. **WP Admin Dashboard:**  
    This screenshot shows the plugin settings page in the WordPress admin dashboard.  
-   ![WP Admin Dashboard](assets/wpadmin-dashboard.png)
+   ![WP Admin Dashboard](https://github.com/cornQ/wpq-post-csv-exporter/blob/main/assests/wpadmin-dashboard.png)
 
 2. **Exported CSV:**  
    This screenshot displays an example of an exported CSV file opened in a spreadsheet application.  
-   ![Exported CSV](assets/exported-csv.png)
+   ![Exported CSV](https://github.com/cornQ/wpq-post-csv-exporter/blob/main/assests/exported-csv.png)
 
 
 ## Changelog
