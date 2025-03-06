@@ -9,11 +9,11 @@ Requires PHP: 7.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Export your posts and custom post types into CSV format effortlessly, including creation date, author, title, URL, and featured image URL.
+Export your posts and custom post types into CSV format effortlessly, including the created date, author, title, URL, and featured image URL.
 
 == Description ==
 
-WPQ Post CSV Exporter is a lightweight WordPress plugin that enables you to export published posts—and any public post type—into a CSV file. It collects essential details such as the post's creation date, author, title, URL, and thumbnail image URL. This tool is perfect for tasks like content migration, data analysis, or creating backups of your site's content.
+WPQ Post CSV Exporter is a lightweight WordPress plugin that enables you to export published posts—and any public post type—into a CSV file. It collects essential details such as the post's creation date, author, title, URL, and thumbnail URL. This tool is ideal for content migration, data analysis, or creating backups of your site's content.
 
 == Frequently Asked Questions ==
 
@@ -33,27 +33,28 @@ Yes, WPQ Post CSV Exporter supports all public post types, including custom post
 == Changelog ==
 
 = 1.3 =
-* Released the stable version of WPQ Post CSV Exporter with full CSV export functionality.
-* Added support for exporting all public post types.
-* Included columns for creation date, author, title, URL, and thumbnail URL.
-
-== Upgrade Notice ==
-
-= 1.3 =
-Upgrade to version 1.3 to access full CSV export capabilities for all public post types and improved performance.
+* Initial Release
 
 == Manual Installation ==
 
-1. **Download:** Obtain the plugin package.
-2. **Upload:** Place the `wpq-post-csv-exporter.php` file into the `/wp-content/plugins/` directory of your WordPress installation.
-3. **Activate:** Activate the plugin from the WordPress **Plugins** menu.
-4. **Export:** Navigate to **Tools > Export Posts CSV**, select the desired post type, and click **Export CSV**.
+1. **Download:**  
+   Download the plugin package from the repository.
+2. **Upload:**  
+   Upload the `wpq-post-csv-exporter.php` file into the `/wp-content/plugins/` directory of your WordPress installation.
+3. **Activate:**  
+   Activate the plugin via the **Plugins** menu in WordPress.
+4. **Export:**  
+   Navigate to **Tools > Export Posts CSV** in your WordPress admin dashboard, select the desired post type, and click the **Export CSV** button.
 
 == Usage ==
 
-On the export page, select the desired public post type from the dropdown menu. The plugin will generate a CSV file with the following columns in order:
+On the export page, select the desired public post type from the dropdown menu. The generated CSV file will include the following columns in order:
 * **Created Date** – The date and time when the post was published (formatted as `YYYY-MM-DD HH:MM:SS`).
 * **Author** – The display name of the post author.
 * **Title** – The title of the post.
 * **URL** – The permalink of the post.
-* **Thumbnail URL** – The URL of the post's featured image, if available.
+* **Thumbnail URL** – The URL of the post's featured image (if available).
+
+== License ==
+
+This plugin is released under the GNU General Public License v3.0 or later. For more details, see [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html).
