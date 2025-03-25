@@ -4,7 +4,7 @@
 **Tags:** csv, export, posts, custom post types  
 **Requires at least:** 4.7 
 **Tested up to:** 6.7  
-**Stable tag:** 1.3  
+**Stable tag:** 1.4  
 **License:** GPLv3 or later
 **License URI:** [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)  
 
