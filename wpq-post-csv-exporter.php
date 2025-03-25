@@ -3,7 +3,7 @@
  * Plugin Name: WPQ Post CSV Exporter
  * Plugin URI: https://github.com/cornQ/wpq-post-csv-exporter
  * Description: Exports published posts (or any public post type) in CSV format including the created date, author, title, URL, and thumbnail URL.
- * Version: 1.3
+ * Version: 1.4
  * Author: Md. Sohanur Rahman Sakib
  * Author URI: https://sakibsti.me
  * License: GPLv3 
@@ -17,29 +17,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Add submenu page under Tools.
  */
-function pce_add_admin_menu() {
+function wpqpceskb_add_admin_menu() {
     add_submenu_page(
         'tools.php',                    // Parent slug.
         'Export Posts CSV',             // Page title.
         'Export Posts CSV',             // Menu title.
         'manage_options',               // Capability required.
         'export-posts-csv',             // Menu slug.
-        'pce_export_page_callback'      // Callback function.
+        'wpqpceskb_export_page_callback'      // Callback function.
     );
 }
-add_action( 'admin_menu', 'pce_add_admin_menu' );
+add_action( 'admin_menu', 'wpqpceskb_add_admin_menu' );
 
 /**
  * Display the export page form.
  */
-function pce_export_page_callback() {
+function wpqpceskb_export_page_callback() {
     if ( ! current_user_can( 'manage_options' ) ) {
         wp_die( esc_html__( 'You do not have sufficient permissions to access this page.', 'wpq-post-csv-exporter' ) );
     }
 
-    if ( isset( $_POST['pce_export_posts'] ) && check_admin_referer( 'pce_export_posts_action', 'pce_export_nonce' ) ) {
-        $post_type = isset( $_POST['pce_export_post_type'] ) ? sanitize_text_field( wp_unslash( $_POST['pce_export_post_type'] ) ) : 'post';
-        pce_export_csv( $post_type );
+    if ( isset( $_POST['wpqpceskb_export_posts'] ) && check_admin_referer( 'wpqpceskb_export_posts_action', 'wpqpceskb_export_nonce' ) ) {
+        $post_type = isset( $_POST['wpqpceskb_export_post_type'] ) ? sanitize_text_field( wp_unslash( $_POST['wpqpceskb_export_post_type'] ) ) : 'post';
+        wpqpceskb_export_csv( $post_type );
         exit;
     }
 
@@ -49,17 +49,17 @@ function pce_export_page_callback() {
     <div class="wrap">
         <h1><?php esc_html_e( 'Export Posts as CSV', 'wpq-post-csv-exporter' ); ?></h1>
         <form method="post">
-            <?php wp_nonce_field( 'pce_export_posts_action', 'pce_export_nonce' ); ?>
+            <?php wp_nonce_field( 'wpqpceskb_export_posts_action', 'wpqpceskb_export_nonce' ); ?>
             <p>
-                <label for="pce_export_post_type"><?php esc_html_e( 'Select Post Type:', 'wpq-post-csv-exporter' ); ?></label>
-                <select id="pce_export_post_type" name="pce_export_post_type">
+                <label for="wpqpceskb_export_post_type"><?php esc_html_e( 'Select Post Type:', 'wpq-post-csv-exporter' ); ?></label>
+                <select id="wpqpceskb_export_post_type" name="wpqpceskb_export_post_type">
                     <?php foreach ( $post_types as $type ) : ?>
                         <option value="<?php echo esc_attr( $type->name ); ?>"><?php echo esc_html( $type->label ); ?></option>
                     <?php endforeach; ?>
                 </select>
             </p>
             <p><?php esc_html_e( 'Click the button below to export the selected post type as a CSV file. The CSV includes created date, author, title, URL, and thumbnail URL.', 'wpq-post-csv-exporter' ); ?></p>
-            <input type="submit" name="pce_export_posts" class="button button-primary" value="<?php esc_attr_e( 'Export CSV', 'wpq-post-csv-exporter' ); ?>">
+            <input type="submit" name="wpqpceskb_export_posts" class="button button-primary" value="<?php esc_attr_e( 'Export CSV', 'wpq-post-csv-exporter' ); ?>">
         </form>
     </div>
     <?php
@@ -70,7 +70,7 @@ function pce_export_page_callback() {
  *
  * @param string $post_type The post type to export. Defaults to 'post'.
  */
-function pce_export_csv( $post_type = 'post' ) {
+function wpqpceskb_export_csv( $post_type = 'post' ) {
     if ( ! current_user_can( 'manage_options' ) ) {
         wp_die( esc_html__( 'You do not have sufficient permissions to perform this action.', 'wpq-post-csv-exporter' ) );
     }
