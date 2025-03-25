@@ -35,6 +35,9 @@ Yes, WPQ Post CSV Exporter supports all public post types, including custom post
 = 1.3 =
 * Initial Release
 
+= 1.4 =
+* Fixing function related issue
+
 == Upgrade Notice ==
 N/A
 

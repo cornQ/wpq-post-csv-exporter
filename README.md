@@ -47,6 +47,9 @@ On the export page, select a public post type from the dropdown. The generated C
 ### 1.3
 - Initial release.
 
+### 1.4
+- Fixing function related issue
+
 ## License
 
 This plugin is released under the GNU General Public License v3.0 or later. For more details, see [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html).
