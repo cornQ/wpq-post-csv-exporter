@@ -27,8 +27,9 @@ Yes, WPQ Post CSV Exporter supports all public post types, including custom post
 
 == Screenshots ==
 
-1. **WP Admin Dashboard** – This screenshot displays the plugin’s export interface within the WordPress admin dashboard. (assets/wpadmin-dashboard.png)
-2. **Exported CSV** – This screenshot shows an example CSV file opened in a spreadsheet application. (assets/exported-csv.png)
+1. **WP Admin Dashboard** – This screenshot displays the plugin’s export interface within the WordPress admin dashboard. 
+
+2. **Exported CSV** – This screenshot shows an example CSV file opened in a spreadsheet application.
 
 == Changelog ==
 
