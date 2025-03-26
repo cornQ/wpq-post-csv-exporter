@@ -45,9 +45,9 @@ N/A
 == Manual Installation ==
 
 1. **Download:**  
-   Download the plugin package from the repository.
+   Download the plugin package from here.
 2. **Upload:**  
-   Upload the `wpq-post-csv-exporter.php` file into the `/wp-content/plugins/` directory of your WordPress installation.
+   Upload the plugin zip file into the `/wp-content/plugins/` directory of your WordPress installation & uncompress it.
 3. **Activate:**  
    Activate the plugin via the **Plugins** menu in WordPress.
 4. **Export:**  

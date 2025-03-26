@@ -1,11 +1,12 @@
 # WPQ Post CSV Exporter
 
-**Contributors:** sakibstime, cornq
-**Tags:** csv, export, posts, custom post types  
-**Requires at least:** 4.7 
-**Tested up to:** 6.7  
-**Stable tag:** 1.4  
-**License:** GPLv3 or later
+**Plugin URI:** https://wordpress.org/plugins/wpq-post-csv-exporter/
+**Contributors:** sakibstime, cornq <br>
+**Tags:** csv, export, posts, custom post types  <br>
+**Requires at least:** 4.7 <br>
+**Tested up to:** 6.7  <br>
+**Stable tag:** 1.4  <br>
+**License:** GPLv3 or later <br>
 **License URI:** [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)  
 
 Exports published posts (or any public post type) in CSV format including the created date, author, title, URL, and thumbnail URL.
@@ -16,8 +17,8 @@ WPQ Post CSV Exporter is a lightweight WordPress plugin that lets you export pub
 
 ## Installation
 
-1. **Download:** Clone or download the repository from [GitHub](https://github.com/cornQ/wpq-post-csv-exporter).
-2. **Upload:** Place the `wpq-post-csv-exporter.php` file into the `/wp-content/plugins/` directory of your WordPress installation.
+1. **Download:** Clone the repository from [GitHub](https://github.com/cornQ/wpq-post-csv-exporter) or download from https://wordpress.org/plugins/wpq-post-csv-exporter/
+2. **Upload:** Upload it into the `/wp-content/plugins/` directory of your WordPress installation & uncompress it.
 3. **Activate:** Activate the plugin via the **Plugins** menu in WordPress.
 4. **Export:** Navigate to **Tools > Export Posts CSV** in your WordPress admin dashboard, select the desired post type, and click the **Export CSV** button.
 
@@ -35,11 +36,11 @@ On the export page, select a public post type from the dropdown. The generated C
 
 1. **WP Admin Dashboard:**  
    This screenshot shows the plugin settings page in the WordPress admin dashboard.  
-   ![WP Admin Dashboard](assests/screenshot-1.png)
+   ![WP Admin Dashboard](assets/screenshot-1.png)
 
 2. **Exported CSV:**  
    This screenshot displays an example of an exported CSV file opened in a spreadsheet application.  
-   ![Exported CSV](assests/screenshot-2.png)
+   ![Exported CSV](assets/screenshot-2.png)
 
 
 ## Changelog
